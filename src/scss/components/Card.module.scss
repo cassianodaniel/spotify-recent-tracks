@@ -1,0 +1,24 @@
+$primary-color: #11b5d8;
+
+.cardContainer {
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.671);
+    border-color: #11b5d8;
+  }
+}
+
+.highlighted {
+  color: #11b5d8;
+}
+
+.artistName:not(:first-child) {
+  margin-left: 3px;
+}
+
+.lapel {
+  position: absolute;
+  left: 0;
+  background-color: $primary-color;
+  width: 5px;
+  height: 100%;
+}

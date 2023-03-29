@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Spotify User Recent Tracks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Spotify User Recent Tracks is a web application that allows the user to see a list of his recently played tracks.
 
-## Available Scripts
+![alt text](/src/assets/avatars/listen-1.jpg)
 
-In the project directory, you can run:
+![alt text](/src/assets/avatars/listen-2.jpg)
+## Tech stack and libraries
 
-### `npm start`
+- [React](https://pt-br.reactjs.org/)
+- [Bootstrap5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+- [SASS](https://sass-lang.com/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Core features: 
+- The user should login with his Spotify credentials;
+- The user should see a list of a User's Recently Played Tracks;
+- The user should mark a track has seen and be able to reorder the list;
+- The user should be able to search for tracks by inserting keys on a text field;
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Authorization flow - How to run the project:
 
-### `npm test`
+### Development mode:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+As the project itself is configured for development purposes, it hasn't been turned public the access for everyone.
+If the authentication, anytime, needs to be public, for everyone that comes and use this project, please take a look at the extended quota mode topic below.
 
-### `npm run build`
+If needed to authenticate any new e-mail for testing login purposes, please log in at our dummy test user at this test user:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+- habittestuser01@gmail.com
+- user01habit
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+And manually add the permission (the e-mail that you will try to login the application),
+following the [instructions of Spotify's authorization topic](https://developer.spotify.com/documentation/general/guides/authorization/app-settings/).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Extended quota mode
 
-### `npm run eject`
+If your app is meant to be used by many or any Spotify users at the same time then you should apply for extended quota mode.
+Apps in this mode have a rate limit that is much higher than apps in development mode, the default mode for new apps. 
+You can apply for a quota extension by opening your app detail page in the Developer Dashboard and tapping on the Request Extension link.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To extend the quota mode, please follow the instructions of https://developer.spotify.com/documentation/general/guides/authorization/app-settings/
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Initial steps:
+ `yarn install`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ `yarn start`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+# Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Daniel Chaves
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

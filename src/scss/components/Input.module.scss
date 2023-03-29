@@ -1,0 +1,37 @@
+$primary-color: #11b5d8;
+$secondary-color: #4a4a4a;
+
+.black {
+  background-color: $secondary-color;
+  color: #fcfcfc;
+}
+
+.blue {
+  color: #fefeff;
+  background-color: $primary-color;
+}
+
+.debounce-input {
+  border: none;
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  min-width: 0;
+  padding: 0.375rem 0.75rem;
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+* {
+  ::placeholder {
+    color: #fcfcfc;
+    font-weight: 600;
+    font-size: 16px;
+  }
+}

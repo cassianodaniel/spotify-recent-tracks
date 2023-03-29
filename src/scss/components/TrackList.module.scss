@@ -1,0 +1,11 @@
+ul.trackList {
+  padding-inline-start: 0px;
+
+  li {
+    list-style: none;
+  }
+
+  li:last-child {
+    padding-bottom: 10px;
+  }
+}
